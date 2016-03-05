@@ -1,2 +1,3 @@
 %% Controlling the project flow
-dataset_name = ['mini_newsgroups','20_newsgroups'] ;
+available_datasets = ['mini_newsgroups','20_newsgroups'] ;
+
