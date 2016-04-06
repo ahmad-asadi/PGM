@@ -6,4 +6,6 @@ dataset_path = char(available_datasets(1)) ;
 %% Importing all strings provided in files along with their labels
 [dataset_str,labels] = import_dataset(dataset_path);
 
+featured_data = extract_features(dataset_str);
 
+disp('finished');
