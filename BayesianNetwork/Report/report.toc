@@ -1,0 +1,8 @@
+\contentsline {section}{\numberline {1}پیش‌پردازش و استخراج ویژگی‌ها}{1}{section.1}
+\contentsline {subsection}{\numberline {1‏.‏1}پیش‌پردازش}{1}{subsection.1.1}
+\contentsline {subsection}{\numberline {1‏.‏2}استخراج ویژگی‌ها}{2}{subsection.1.2}
+\contentsline {section}{\numberline {2}ماتریس درهم‌ریختگی و تاثیر تعداد کلمات کلیدی منتخب از دسته‌های خبری مختلف}{3}{section.2}
+\contentsline {section}{\numberline {3}تاثیر تعداد ویژگی‌ها}{4}{section.3}
+\contentsline {section}{\numberline {4}بررسی استقلال شرطی ویژگی‌ها به شرط دانستن کلاس}{5}{section.4}
+\contentsline {section}{\numberline {5}تاثیر تعداد داده‌های آموزشی}{6}{section.5}
+\contentsline {section}{\numberline {6}توضیحات}{6}{section.6}
