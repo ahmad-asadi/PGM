@@ -5,4 +5,7 @@
 \contentsline {section}{\numberline {3}تاثیر تعداد ویژگی‌ها}{4}{section.3}
 \contentsline {section}{\numberline {4}بررسی استقلال شرطی ویژگی‌ها به شرط دانستن کلاس}{5}{section.4}
 \contentsline {section}{\numberline {5}تاثیر تعداد داده‌های آموزشی}{6}{section.5}
-\contentsline {section}{\numberline {6}توضیحات}{6}{section.6}
+\contentsline {section}{\numberline {6}مقایسه با یک جبه ابزار آماده}{6}{section.6}
+\contentsline {subsection}{\numberline {6‏.‏1}معرفی جعبه ابزار مورد استفاده}{6}{subsection.6.1}
+\contentsline {subsection}{\numberline {6‏.‏2}بررسی نتایج جعبه ابزار و مقایسه روش‌ها}{7}{subsection.6.2}
+\contentsline {section}{\numberline {7}توضیحات}{8}{section.7}
