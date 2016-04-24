@@ -1,17 +1,19 @@
 % Image Segmentation Using MRF with Simulated Annealing
 disp('loading image');
-image = imread('../test1.bmp');
+image = imread('../test2.jpg');
 
-image = image(:,:,1) ;
+%image = rgb2gray(image);
+image = image(:,:,3) ;
 image = im2double(image) ;
-
+imhist(image);
 lcount = 3 ;
 
 disp('setting class statistics');
 mu = zeros(lcount,1);
 sigma = zeros(lcount,1) + 0.125 ;
-mu = [0;0.5;1];
-
+%mu = [0;0.5;1];
+mu =[20/255,80/255,160/255]
+sigma = [15/255,15/255,20/255]
 W0 = randi(3,size(image,1), size(image,2));
 
 disp('Start ');
@@ -19,13 +21,14 @@ T0 = 10 ;
 T = T0;
 Tsigma = -0.1;
 MR = 1;%Modification Ratio
-MRsigma = -0.0005;
-Beta0 = 0 ;
+MRsigma = -0.005;
+Beta0 = 0.5 ;
 Beta = Beta0 ;
-BetaSigma = 0.01;
+BetaSigma = 0;
 BetaMax=0.5;
+Tcounter = 0 ;
 
-image = imnoise(image,'gaussian' , 0 , 0.1);
+%image = imnoise(image,'gaussian' , 0 , 0.01);
 figure ;
 title('MRF_input');
 imshow(image);
@@ -47,37 +50,32 @@ for k = 1 : 100
             end
             x = rand_locations(rli,1);
             y = rand_locations(rli,2);
-            [~,W(x,y)] = max([normpdf(image(x,y),mu(1),sigma(1)),normpdf(image(x,y),mu(2),sigma(2)),normpdf(image(x,y),mu(3),sigma(3))]);
-%            W(x,y) = randi(3);
-          if( k > 2 )
-          while(W(x,y)==W0(x,y))
-              W(x,y) = randi(3);
-          end
-          end
+           [~,W(x,y)] = max([normpdf(image(x,y),mu(1),sigma(1)),normpdf(image(x,y),mu(2),sigma(2)),normpdf(image(x,y),mu(3),sigma(3))]);
+           if(k>10)
+            W(x,y) = randi(3);
+           end
+%          while(W(x,y)==W0(x,y))
+%              W(x,y) = randi(3);
+%          end
+
             old_coeff = get_coeff(W0,x,y) ;
             delta_coeff = get_coeff(W,x,y) - old_coeff;
             deltaU = normpdf(image(x,y),mu(W(x,y)),sigma(W(x,y))) - normpdf(image(x,y),mu(W0(x,y)),sigma(W0(x,y)));
             deltaU =(1-Beta)* deltaU + delta_coeff * Beta ;
             if(deltaU > 0)
                 W0 = W;
-                if(k>2)
-                    disp('here');
-                end
            else
                p = rand(1);
-               threshold = exp(-deltaU/T);
+               threshold = exp(deltaU/T);
                if(p<threshold)
                    W0 = W ;
                end
-            end
+            end    
         end
-    
-    T = max(Tsigma * k + T0,0.1)  ;
-    MR = max(MRsigma * k + MR,0.005) ;
-    Beta = min(BetaSigma * k + Beta0, BetaMax) ;
-%     if(U == oldU)
-%         break;
-%     end
+        
+                T = max(Tsigma * k + T0,0.1)  ;
+                MR = max(MRsigma * k + MR,0.005) ;
+                Beta = min(BetaSigma * k + Beta0, BetaMax) ;
 end
 
 imshow((W0./3));

@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.1415926-2.5-0.9999.3 (TeX Live 2013/Debian) (format=xelatex 2016.4.13)  23 APR 2016 22:01
+This is XeTeX, Version 3.1415926-2.5-0.9999.3 (TeX Live 2013/Debian) (format=xelatex 2016.4.13)  24 APR 2016 19:09
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1581,6 +1581,8 @@ LaTeX Info: Redefining \nameref on input line 59.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
+File: Imgs/ceit_logo.png Graphic file (type QTm)
+<use  "Imgs/ceit_logo.png" >
 LaTeX Font Info:    Font shape `EU1/BNazanin(0)/m/n' will be
 (Font)              scaled to size 17.28pt on input line 68.
 LaTeX Font Info:    Font shape `EU1/BNazanin(0)/m/n' will be
@@ -1589,6 +1591,7 @@ LaTeX Font Info:    Font shape `EU1/BNazanin(0)/bx/n' will be
 (Font)              scaled to size 12.0pt on input line 78.
 LaTeX Font Info:    Font shape `EU1/BNazanin(0)/m/n' will be
 (Font)              scaled to size 14.4pt on input line 83.
+
 (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/se-ascii-print.def
 File: se-ascii-print.def 2011/12/02 v1.10 stringenc: Printable ASCII characters
 
@@ -1620,386 +1623,104 @@ LaTeX Font Info:    Font shape `EU1/BNazanin(0)/m/n' will be
 (Font)              scaled to size 8.0pt on input line 110.
 LaTeX Font Info:    Font shape `EU1/BNazanin(0)/m/n' will be
 (Font)              scaled to size 6.0pt on input line 110.
-Missing character: There is no C in font B Nazanin/OT:script=arab;language=DFLT
-;mapping=parsidigits;!
-Missing character: There is no o in font B Nazanin/OT:script=arab;language=DFLT
-;mapping=parsidigits;!
-Missing character: There is no n in font B Nazanin/OT:script=arab;language=DFLT
-;mapping=parsidigits;!
-Missing character: There is no d in font B Nazanin/OT:script=arab;language=DFLT
-;mapping=parsidigits;!
-Missing character: There is no i in font B Nazanin/OT:script=arab;language=DFLT
-;mapping=parsidigits;!
-Missing character: There is no t in font B Nazanin/OT:script=arab;language=DFLT
-;mapping=parsidigits;!
-Missing character: There is no i in font B Nazanin/OT:script=arab;language=DFLT
-;mapping=parsidigits;!
-Missing character: There is no o in font B Nazanin/OT:script=arab;language=DFLT
-;mapping=parsidigits;!
-Missing character: There is no n in font B Nazanin/OT:script=arab;language=DFLT
-;mapping=parsidigits;!
-Missing character: There is no a in font B Nazanin/OT:script=arab;language=DFLT
-;mapping=parsidigits;!
-Missing character: There is no l in font B Nazanin/OT:script=arab;language=DFLT
-;mapping=parsidigits;!
-Missing character: There is no P in font B Nazanin/OT:script=arab;language=DFLT
-;mapping=parsidigits;!
-Missing character: There is no r in font B Nazanin/OT:script=arab;language=DFLT
-;mapping=parsidigits;!
-Missing character: There is no o in font B Nazanin/OT:script=arab;language=DFLT
-;mapping=parsidigits;!
-Missing character: There is no b in font B Nazanin/OT:script=arab;language=DFLT
-;mapping=parsidigits;!
-Missing character: There is no a in font B Nazanin/OT:script=arab;language=DFLT
-;mapping=parsidigits;!
-Missing character: There is no b in font B Nazanin/OT:script=arab;language=DFLT
-;mapping=parsidigits;!
-Missing character: There is no i in font B Nazanin/OT:script=arab;language=DFLT
-;mapping=parsidigits;!
-Missing character: There is no l in font B Nazanin/OT:script=arab;language=DFLT
-;mapping=parsidigits;!
-Missing character: There is no i in font B Nazanin/OT:script=arab;language=DFLT
-;mapping=parsidigits;!
-Missing character: There is no t in font B Nazanin/OT:script=arab;language=DFLT
-;mapping=parsidigits;!
-Missing character: There is no y in font B Nazanin/OT:script=arab;language=DFLT
-;mapping=parsidigits;!
-Missing character: There is no D in font B Nazanin/OT:script=arab;language=DFLT
-;mapping=parsidigits;!
-Missing character: There is no i in font B Nazanin/OT:script=arab;language=DFLT
-;mapping=parsidigits;!
-Missing character: There is no s in font B Nazanin/OT:script=arab;language=DFLT
-;mapping=parsidigits;!
-Missing character: There is no t in font B Nazanin/OT:script=arab;language=DFLT
-;mapping=parsidigits;!
-Missing character: There is no r in font B Nazanin/OT:script=arab;language=DFLT
-;mapping=parsidigits;!
-Missing character: There is no i in font B Nazanin/OT:script=arab;language=DFLT
-;mapping=parsidigits;!
-Missing character: There is no b in font B Nazanin/OT:script=arab;language=DFLT
-;mapping=parsidigits;!
-Missing character: There is no u in font B Nazanin/OT:script=arab;language=DFLT
-;mapping=parsidigits;!
-Missing character: There is no t in font B Nazanin/OT:script=arab;language=DFLT
-;mapping=parsidigits;!
-Missing character: There is no i in font B Nazanin/OT:script=arab;language=DFLT
-;mapping=parsidigits;!
-Missing character: There is no o in font B Nazanin/OT:script=arab;language=DFLT
-;mapping=parsidigits;!
-Missing character: There is no n in font B Nazanin/OT:script=arab;language=DFLT
-;mapping=parsidigits;!
-Missing character: There is no C in font B Nazanin/OT:script=arab;language=DFLT
-;mapping=parsidigits;!
-Missing character: There is no P in font B Nazanin/OT:script=arab;language=DFLT
-;mapping=parsidigits;!
-Missing character: There is no D in font B Nazanin/OT:script=arab;language=DFLT
-;mapping=parsidigits;!
-Missing character: There is no N in font B Nazanin/OT:script=arab;language=DFLT
-;mapping=parsidigits;!
-Missing character: There is no e in font B Nazanin/OT:script=arab;language=DFLT
-;mapping=parsidigits;!
-Missing character: There is no w in font B Nazanin/OT:script=arab;language=DFLT
-;mapping=parsidigits;!
-Missing character: There is no s in font B Nazanin/OT:script=arab;language=DFLT
-;mapping=parsidigits;!
-Missing character: There is no G in font B Nazanin/OT:script=arab;language=DFLT
-;mapping=parsidigits;!
-Missing character: There is no r in font B Nazanin/OT:script=arab;language=DFLT
-;mapping=parsidigits;!
-Missing character: There is no o in font B Nazanin/OT:script=arab;language=DFLT
-;mapping=parsidigits;!
-Missing character: There is no u in font B Nazanin/OT:script=arab;language=DFLT
-;mapping=parsidigits;!
-Missing character: There is no p in font B Nazanin/OT:script=arab;language=DFLT
-;mapping=parsidigits;!
-Missing character: There is no s in font B Nazanin/OT:script=arab;language=DFLT
-;mapping=parsidigits;!
 
-\endL or \endR problem (2 missing, 1 extra) detected at line 136
+\endL or \endR problem (2 missing, 1 extra) detected at line 139
 [] [] \EU1/lmroman10-regular(0)/m/n/10 ISBN0-910309-26-4  [][]
  []
 
 
-\endL or \endR problem (2 missing, 1 extra) detected at line 140
+\endL or \endR problem (2 missing, 1 extra) detected at line 143
 [] [] \EU1/lmroman10-regular(0)/m/n/10 alt.atheism  [][]
- []
-
-
-\endL or \endR problem (2 missing, 1 extra) detected at line 145
-[] [] \EU1/lmroman10-regular(0)/m/n/10 20NewsGroups  [][]
  []
 
 
 \endL or \endR problem (2 missing, 1 extra) detected at line 148
-[] [] \EU1/lmroman10-regular(0)/m/n/10 D-3000Hannover  [][]
- []
-
-
-\endL or \endR problem (2 missing, 1 extra) detected at line 152
-[] [] \EU1/lmroman10-regular(0)/m/n/10 alt.atheism  [][]
- []
-
-
-\endL or \endR problem (2 missing, 1 extra) detected at line 157
 [] [] \EU1/lmroman10-regular(0)/m/n/10 20NewsGroups  [][]
  []
 
 
+\endL or \endR problem (2 missing, 1 extra) detected at line 151
+[] [] \EU1/lmroman10-regular(0)/m/n/10 D-3000Hannover  [][]
+ []
+
+
+\endL or \endR problem (2 missing, 1 extra) detected at line 155
+[] [] \EU1/lmroman10-regular(0)/m/n/10 alt.atheism  [][]
+ []
+
+
 \endL or \endR problem (2 missing, 1 extra) detected at line 160
+[] [] \EU1/lmroman10-regular(0)/m/n/10 20NewsGroups  [][]
+ []
+
+
+\endL or \endR problem (2 missing, 1 extra) detected at line 163
 [] [] \EU1/lmroman10-regular(0)/m/n/10 416-629-7000/629-7044  [][]
  []
 
 
-\endL or \endR problem (2 missing, 1 extra) detected at line 164
+\endL or \endR problem (2 missing, 1 extra) detected at line 167
 [] [] \EU1/lmroman10-regular(0)/m/n/10 comp.graphics  [][]
  []
 
 
-\endL or \endR problem (2 missing, 1 extra) detected at line 169
+\endL or \endR problem (2 missing, 1 extra) detected at line 172
 [] [] \EU1/lmroman10-regular(0)/m/n/10 mini_newsgroups  [][]
  []
 
 
-\endL or \endR problem (2 missing, 1 extra) detected at line 172
+\endL or \endR problem (2 missing, 1 extra) detected at line 175
 [] [] \EU1/lmroman10-regular(0)/m/n/10 S1/S2  [][]
  []
 
 
-\endL or \endR problem (2 missing, 1 extra) detected at line 176
+\endL or \endR problem (2 missing, 1 extra) detected at line 179
 [] [] \EU1/lmroman10-regular(0)/m/n/10 sci.crypt  [][]
  []
 
 
-\endL or \endR problem (2 missing, 1 extra) detected at line 180
+\endL or \endR problem (2 missing, 1 extra) detected at line 183
 [] [] \EU1/lmroman10-regular(0)/m/n/10 mini_newsgroups  [][]
  []
 
 
-\endL or \endR problem (2 missing, 1 extra) detected at line 198
+\endL or \endR problem (2 missing, 1 extra) detected at line 201
 [] [] \EU1/lmroman10-regular(0)/m/n/10 joke>  [][]
  []
 
 
-\endL or \endR problem (2 missing, 1 extra) detected at line 203
+\endL or \endR problem (2 missing, 1 extra) detected at line 206
 [] [] \EU1/lmroman10-regular(0)/m/n/10 joke  [][]
  []
 
 
-\endL or \endR problem (2 missing, 1 extra) detected at line 206
+\endL or \endR problem (2 missing, 1 extra) detected at line 209
 [] [] \EU1/lmroman10-regular(0)/m/n/10 ><disclaimer:  [][]
  []
 
 
-\endL or \endR problem (2 missing, 1 extra) detected at line 211
+\endL or \endR problem (2 missing, 1 extra) detected at line 214
 [] [] \EU1/lmroman10-regular(0)/m/n/10 disclaimer  [][]
  []
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-Missing character: There is no S in font B Nazanin/OT:script=arab;language=DFLT
-;mapping=parsidigits;!
-Missing character: There is no t in font B Nazanin/OT:script=arab;language=DFLT
-;mapping=parsidigits;!
-Missing character: There is no o in font B Nazanin/OT:script=arab;language=DFLT
-;mapping=parsidigits;!
-Missing character: There is no p in font B Nazanin/OT:script=arab;language=DFLT
-;mapping=parsidigits;!
-Missing character: There is no W in font B Nazanin/OT:script=arab;language=DFLT
-;mapping=parsidigits;!
-Missing character: There is no o in font B Nazanin/OT:script=arab;language=DFLT
-;mapping=parsidigits;!
-Missing character: There is no r in font B Nazanin/OT:script=arab;language=DFLT
-;mapping=parsidigits;!
-Missing character: There is no d in font B Nazanin/OT:script=arab;language=DFLT
-;mapping=parsidigits;!
-Missing character: There is no s in font B Nazanin/OT:script=arab;language=DFLT
-;mapping=parsidigits;!
-[1]
-Missing character: There is no I in font B Nazanin/OT:script=arab;language=DFLT
-;mapping=parsidigits;!
-Missing character: There is no n in font B Nazanin/OT:script=arab;language=DFLT
-;mapping=parsidigits;!
-Missing character: There is no d in font B Nazanin/OT:script=arab;language=DFLT
-;mapping=parsidigits;!
-Missing character: There is no e in font B Nazanin/OT:script=arab;language=DFLT
-;mapping=parsidigits;!
-Missing character: There is no x in font B Nazanin/OT:script=arab;language=DFLT
-;mapping=parsidigits;!
- [2]
-Missing character: There is no m in font B Nazanin/OT:script=arab;language=DFLT
-;mapping=parsidigits;!
-Missing character: There is no i in font B Nazanin/OT:script=arab;language=DFLT
-;mapping=parsidigits;!
-Missing character: There is no n in font B Nazanin/OT:script=arab;language=DFLT
-;mapping=parsidigits;!
-Missing character: There is no i in font B Nazanin/OT:script=arab;language=DFLT
-;mapping=parsidigits;!
-Missing character: There is no _ in font B Nazanin/OT:script=arab;language=DFLT
-;mapping=parsidigits;!
-Missing character: There is no n in font B Nazanin/OT:script=arab;language=DFLT
-;mapping=parsidigits;!
-Missing character: There is no e in font B Nazanin/OT:script=arab;language=DFLT
-;mapping=parsidigits;!
-Missing character: There is no w in font B Nazanin/OT:script=arab;language=DFLT
-;mapping=parsidigits;!
-Missing character: There is no s in font B Nazanin/OT:script=arab;language=DFLT
-;mapping=parsidigits;!
-Missing character: There is no g in font B Nazanin/OT:script=arab;language=DFLT
-;mapping=parsidigits;!
-Missing character: There is no r in font B Nazanin/OT:script=arab;language=DFLT
-;mapping=parsidigits;!
-Missing character: There is no o in font B Nazanin/OT:script=arab;language=DFLT
-;mapping=parsidigits;!
-Missing character: There is no u in font B Nazanin/OT:script=arab;language=DFLT
-;mapping=parsidigits;!
-Missing character: There is no p in font B Nazanin/OT:script=arab;language=DFLT
-;mapping=parsidigits;!
-Missing character: There is no s in font B Nazanin/OT:script=arab;language=DFLT
-;mapping=parsidigits;!
+[1] [2]
+
+LaTeX Warning: Reference `footdir@14' on page 3 undefined on input line 283.
 
 
-LaTeX Warning: Reference `footdir@14' on page 3 undefined on input line 273.
+LaTeX Warning: Reference `footdir@16' on page 3 undefined on input line 284.
 
-Missing character: There is no T in font B Nazanin/OT:script=arab;language=DFLT
-;mapping=parsidigits;!
-Missing character: There is no r in font B Nazanin/OT:script=arab;language=DFLT
-;mapping=parsidigits;!
-Missing character: There is no u in font B Nazanin/OT:script=arab;language=DFLT
-;mapping=parsidigits;!
-Missing character: There is no e in font B Nazanin/OT:script=arab;language=DFLT
-;mapping=parsidigits;!
-Missing character: There is no P in font B Nazanin/OT:script=arab;language=DFLT
-;mapping=parsidigits;!
-Missing character: There is no o in font B Nazanin/OT:script=arab;language=DFLT
-;mapping=parsidigits;!
-Missing character: There is no s in font B Nazanin/OT:script=arab;language=DFLT
-;mapping=parsidigits;!
-Missing character: There is no i in font B Nazanin/OT:script=arab;language=DFLT
-;mapping=parsidigits;!
-Missing character: There is no t in font B Nazanin/OT:script=arab;language=DFLT
-;mapping=parsidigits;!
-Missing character: There is no i in font B Nazanin/OT:script=arab;language=DFLT
-;mapping=parsidigits;!
-Missing character: There is no v in font B Nazanin/OT:script=arab;language=DFLT
-;mapping=parsidigits;!
-Missing character: There is no e in font B Nazanin/OT:script=arab;language=DFLT
-;mapping=parsidigits;!
 
-LaTeX Warning: Reference `footdir@16' on page 3 undefined on input line 274.
+LaTeX Warning: Reference `footdir@18' on page 3 undefined on input line 285.
 
-Missing character: There is no F in font B Nazanin/OT:script=arab;language=DFLT
-;mapping=parsidigits;!
-Missing character: There is no a in font B Nazanin/OT:script=arab;language=DFLT
-;mapping=parsidigits;!
-Missing character: There is no l in font B Nazanin/OT:script=arab;language=DFLT
-;mapping=parsidigits;!
-Missing character: There is no s in font B Nazanin/OT:script=arab;language=DFLT
-;mapping=parsidigits;!
-Missing character: There is no e in font B Nazanin/OT:script=arab;language=DFLT
-;mapping=parsidigits;!
-Missing character: There is no P in font B Nazanin/OT:script=arab;language=DFLT
-;mapping=parsidigits;!
-Missing character: There is no o in font B Nazanin/OT:script=arab;language=DFLT
-;mapping=parsidigits;!
-Missing character: There is no s in font B Nazanin/OT:script=arab;language=DFLT
-;mapping=parsidigits;!
-Missing character: There is no i in font B Nazanin/OT:script=arab;language=DFLT
-;mapping=parsidigits;!
-Missing character: There is no t in font B Nazanin/OT:script=arab;language=DFLT
-;mapping=parsidigits;!
-Missing character: There is no i in font B Nazanin/OT:script=arab;language=DFLT
-;mapping=parsidigits;!
-Missing character: There is no v in font B Nazanin/OT:script=arab;language=DFLT
-;mapping=parsidigits;!
-Missing character: There is no e in font B Nazanin/OT:script=arab;language=DFLT
-;mapping=parsidigits;!
 
-LaTeX Warning: Reference `footdir@18' on page 3 undefined on input line 275.
+LaTeX Warning: Reference `footdir@20' on page 3 undefined on input line 286.
 
-Missing character: There is no T in font B Nazanin/OT:script=arab;language=DFLT
-;mapping=parsidigits;!
-Missing character: There is no r in font B Nazanin/OT:script=arab;language=DFLT
-;mapping=parsidigits;!
-Missing character: There is no u in font B Nazanin/OT:script=arab;language=DFLT
-;mapping=parsidigits;!
-Missing character: There is no e in font B Nazanin/OT:script=arab;language=DFLT
-;mapping=parsidigits;!
-Missing character: There is no P in font B Nazanin/OT:script=arab;language=DFLT
-;mapping=parsidigits;!
-Missing character: There is no o in font B Nazanin/OT:script=arab;language=DFLT
-;mapping=parsidigits;!
-Missing character: There is no s in font B Nazanin/OT:script=arab;language=DFLT
-;mapping=parsidigits;!
-Missing character: There is no i in font B Nazanin/OT:script=arab;language=DFLT
-;mapping=parsidigits;!
-Missing character: There is no t in font B Nazanin/OT:script=arab;language=DFLT
-;mapping=parsidigits;!
-Missing character: There is no i in font B Nazanin/OT:script=arab;language=DFLT
-;mapping=parsidigits;!
-Missing character: There is no v in font B Nazanin/OT:script=arab;language=DFLT
-;mapping=parsidigits;!
-Missing character: There is no e in font B Nazanin/OT:script=arab;language=DFLT
-;mapping=parsidigits;!
-Missing character: There is no R in font B Nazanin/OT:script=arab;language=DFLT
-;mapping=parsidigits;!
-Missing character: There is no a in font B Nazanin/OT:script=arab;language=DFLT
-;mapping=parsidigits;!
-Missing character: There is no t in font B Nazanin/OT:script=arab;language=DFLT
-;mapping=parsidigits;!
-Missing character: There is no e in font B Nazanin/OT:script=arab;language=DFLT
-;mapping=parsidigits;!
-Missing character: There is no T in font B Nazanin/OT:script=arab;language=DFLT
-;mapping=parsidigits;!
-Missing character: There is no P in font B Nazanin/OT:script=arab;language=DFLT
-;mapping=parsidigits;!
-Missing character: There is no R in font B Nazanin/OT:script=arab;language=DFLT
-;mapping=parsidigits;!
 
-LaTeX Warning: Reference `footdir@20' on page 3 undefined on input line 276.
-
-Missing character: There is no F in font B Nazanin/OT:script=arab;language=DFLT
-;mapping=parsidigits;!
-Missing character: There is no a in font B Nazanin/OT:script=arab;language=DFLT
-;mapping=parsidigits;!
-Missing character: There is no l in font B Nazanin/OT:script=arab;language=DFLT
-;mapping=parsidigits;!
-Missing character: There is no s in font B Nazanin/OT:script=arab;language=DFLT
-;mapping=parsidigits;!
-Missing character: There is no e in font B Nazanin/OT:script=arab;language=DFLT
-;mapping=parsidigits;!
-Missing character: There is no P in font B Nazanin/OT:script=arab;language=DFLT
-;mapping=parsidigits;!
-Missing character: There is no o in font B Nazanin/OT:script=arab;language=DFLT
-;mapping=parsidigits;!
-Missing character: There is no s in font B Nazanin/OT:script=arab;language=DFLT
-;mapping=parsidigits;!
-Missing character: There is no i in font B Nazanin/OT:script=arab;language=DFLT
-;mapping=parsidigits;!
-Missing character: There is no t in font B Nazanin/OT:script=arab;language=DFLT
-;mapping=parsidigits;!
-Missing character: There is no i in font B Nazanin/OT:script=arab;language=DFLT
-;mapping=parsidigits;!
-Missing character: There is no v in font B Nazanin/OT:script=arab;language=DFLT
-;mapping=parsidigits;!
-Missing character: There is no e in font B Nazanin/OT:script=arab;language=DFLT
-;mapping=parsidigits;!
-Missing character: There is no R in font B Nazanin/OT:script=arab;language=DFLT
-;mapping=parsidigits;!
-Missing character: There is no a in font B Nazanin/OT:script=arab;language=DFLT
-;mapping=parsidigits;!
-Missing character: There is no t in font B Nazanin/OT:script=arab;language=DFLT
-;mapping=parsidigits;!
-Missing character: There is no e in font B Nazanin/OT:script=arab;language=DFLT
-;mapping=parsidigits;!
-Missing character: There is no F in font B Nazanin/OT:script=arab;language=DFLT
-;mapping=parsidigits;!
-Missing character: There is no P in font B Nazanin/OT:script=arab;language=DFLT
-;mapping=parsidigits;!
-Missing character: There is no R in font B Nazanin/OT:script=arab;language=DFLT
-;mapping=parsidigits;!
-
-Overfull \hbox (39.85068pt too wide) in paragraph at lines 289--297
+Overfull \hbox (39.85068pt too wide) in paragraph at lines 299--307
  [][][] 
  []
 
@@ -2007,36 +1728,32 @@ Overfull \hbox (39.85068pt too wide) in paragraph at lines 289--297
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 299--302
+Underfull \hbox (badness 10000) in paragraph at lines 309--312
 [][]
  []
 
 [3]
-Overfull \hbox (39.49911pt too wide) in paragraph at lines 311--320
+Overfull \hbox (39.49911pt too wide) in paragraph at lines 321--330
  [][][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 354--356
+Underfull \hbox (badness 10000) in paragraph at lines 364--366
 [][]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 357--373
+Underfull \hbox (badness 10000) in paragraph at lines 367--379
 [][]
  []
 
 [4]
-Overfull \hbox (39.49911pt too wide) in paragraph at lines 378--387
+Overfull \hbox (39.49911pt too wide) in paragraph at lines 384--393
  [][][] 
  []
 
-
-Overfull \hbox (39.49911pt too wide) in paragraph at lines 395--404
- [][][] 
- []
-
-[5]
+File: Imgs/graph.png Graphic file (type QTm)
+<use  "Imgs/graph.png" > [5]
 Missing character: There is no ل in font [lmroman10-regular]/ICU:script=latn;la
 nguage=DFLT;mapping=tex-text;!
 Missing character: There is no ی in font [lmroman10-regular]/ICU:script=latn;la
@@ -2079,51 +1796,12 @@ Missing character: There is no ر in font [lmroman10-regular]/ICU:script=latn;la
 nguage=DFLT;mapping=tex-text;!
  [6]
 File: Imgs/tool.png Graphic file (type QTm)
- <use  "Imgs/tool.png" >
-Missing character: There is no F in font B Nazanin/OT:script=arab;language=DFLT
-;mapping=parsidigits;!
-Missing character: There is no e in font B Nazanin/OT:script=arab;language=DFLT
-;mapping=parsidigits;!
-Missing character: There is no e in font B Nazanin/OT:script=arab;language=DFLT
-;mapping=parsidigits;!
-Missing character: There is no d in font B Nazanin/OT:script=arab;language=DFLT
-;mapping=parsidigits;!
-Missing character: There is no b in font B Nazanin/OT:script=arab;language=DFLT
-;mapping=parsidigits;!
-Missing character: There is no a in font B Nazanin/OT:script=arab;language=DFLT
-;mapping=parsidigits;!
-Missing character: There is no c in font B Nazanin/OT:script=arab;language=DFLT
-;mapping=parsidigits;!
-Missing character: There is no k in font B Nazanin/OT:script=arab;language=DFLT
-;mapping=parsidigits;!
-Missing character: There is no A in font B Nazanin/OT:script=arab;language=DFLT
-;mapping=parsidigits;!
-Missing character: There is no c in font B Nazanin/OT:script=arab;language=DFLT
-;mapping=parsidigits;!
-Missing character: There is no c in font B Nazanin/OT:script=arab;language=DFLT
-;mapping=parsidigits;!
-Missing character: There is no u in font B Nazanin/OT:script=arab;language=DFLT
-;mapping=parsidigits;!
-Missing character: There is no r in font B Nazanin/OT:script=arab;language=DFLT
-;mapping=parsidigits;!
-Missing character: There is no a in font B Nazanin/OT:script=arab;language=DFLT
-;mapping=parsidigits;!
-Missing character: There is no c in font B Nazanin/OT:script=arab;language=DFLT
-;mapping=parsidigits;!
-Missing character: There is no y in font B Nazanin/OT:script=arab;language=DFLT
-;mapping=parsidigits;!
-
-Underfull \hbox (badness 10000) in paragraph at lines 532--535
-[][]
- []
-
-[7]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 557.
+ <use  "Imgs/tool.png" > [7]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 555.
  [8]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 557.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 555.
  (./report.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 557.
-
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 555.
 
  *File List*
  article.cls    2007/10/19 v1.4h Standard LaTeX document class
@@ -2318,23 +1996,25 @@ zref-perpage.sty    2012/04/04 v2.24 Module perpage for zref (HO)
 gettitlestring.sty    2010/12/03 v1.4 Cleanup title references (HO)
   report.out
   report.out
+Imgs/ceit_logo.png
 se-ascii-print.def    2011/12/02 v1.10 stringenc: Printable ASCII characters
     umsa.fd    2013/01/14 v3.01 AMS symbols A
    uwasy.fd    2003/10/30 v2.0 Wasy-2 symbol font definitions
+Imgs/graph.png
 Imgs/tool.png
  ***********
 
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 557.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 555.
 
 LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 27666 strings out of 493918
- 497273 string characters out of 6150563
- 615426 words of memory out of 5000000
- 30467 multiletter control sequences out of 15000+600000
- 10372 words of font info for 102 fonts, out of 8000000 for 9000
+ 27667 strings out of 493918
+ 497146 string characters out of 6150563
+ 616426 words of memory out of 5000000
+ 30468 multiletter control sequences out of 15000+600000
+ 10356 words of font info for 100 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
  45i,20n,75p,10452b,464s stack positions out of 5000i,500n,10000p,200000b,80000s
 
