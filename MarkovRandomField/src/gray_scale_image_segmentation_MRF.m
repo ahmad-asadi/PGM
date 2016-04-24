@@ -15,12 +15,15 @@ mu = [0;0.5;1];
 W0 = randi(3,size(image,1), size(image,2));
 
 disp('Start ');
-T0 = 1000 ;
+T0 = 10 ;
 T = T0;
-Tsigma = -10;
+Tsigma = -0.1;
 MR = 1;%Modification Ratio
 MRsigma = -0.0005;
-Beta = 0.2 ;
+Beta0 = 0 ;
+Beta = Beta0 ;
+BetaSigma = 0.01;
+BetaMax=0.5;
 
 image = imnoise(image,'gaussian' , 0 , 0.1);
 figure ;
@@ -45,29 +48,33 @@ for k = 1 : 100
             x = rand_locations(rli,1);
             y = rand_locations(rli,2);
             [~,W(x,y)] = max([normpdf(image(x,y),mu(1),sigma(1)),normpdf(image(x,y),mu(2),sigma(2)),normpdf(image(x,y),mu(3),sigma(3))]);
-%             W(x,y) = randi(3);
-            if( k > 40 )
-            while(W(x,y)==W0(x,y))
-                W(x,y) = randi(3);
-            end
-            end
+%            W(x,y) = randi(3);
+          if( k > 2 )
+          while(W(x,y)==W0(x,y))
+              W(x,y) = randi(3);
+          end
+          end
             old_coeff = get_coeff(W0,x,y) ;
             delta_coeff = get_coeff(W,x,y) - old_coeff;
             deltaU = normpdf(image(x,y),mu(W(x,y)),sigma(W(x,y))) - normpdf(image(x,y),mu(W0(x,y)),sigma(W0(x,y)));
-            deltaU = deltaU + delta_coeff * Beta ;
+            deltaU =(1-Beta)* deltaU + delta_coeff * Beta ;
             if(deltaU > 0)
                 W0 = W;
-            else
-                p = rand(1);
-                threshold = exp(deltaU/T);
-                if(p<threshold)
-                    W0 = W ;
+                if(k>2)
+                    disp('here');
                 end
+           else
+               p = rand(1);
+               threshold = exp(-deltaU/T);
+               if(p<threshold)
+                   W0 = W ;
+               end
             end
         end
     
     T = max(Tsigma * k + T0,0.1)  ;
     MR = max(MRsigma * k + MR,0.005) ;
+    Beta = min(BetaSigma * k + Beta0, BetaMax) ;
 %     if(U == oldU)
 %         break;
 %     end
