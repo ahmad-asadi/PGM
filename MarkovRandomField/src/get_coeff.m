@@ -16,4 +16,4 @@ end
 
 
 function res = is_in_bound(i,j,max_i,max_j , x ,y)
-res = i > -x && i < max_i - x && j > -y && j < max_j - y ; 
+res = i > -x && i < max_i - x && j > -y && j < max_j - y ;%&& i~= j && i ~= -j ; 

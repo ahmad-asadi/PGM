@@ -4,7 +4,7 @@ image = imread('../test2.jpg');
 
 %image = rgb2gray(image);
 image = rgb2hsv(image);
-image = image(:,:,1) ;
+image = image(:,:,3) ;
 image = im2double(image) ;
 lcount = 3 ;
 
@@ -12,8 +12,7 @@ disp('setting class statistics');
 sigma = zeros(lcount,1) + 0.125 ;
 %mu = [0;0.5;1];
 %mu =[20/255,80/255,160/255];
-mu =[0.25, 0.6, 0.9];
-sigma = [0.1,0.1,0.08];
+%mu =[0.25, 0.6, 0.9]
 %sigma = [15/255,15/255,20/255];
 W0 = randi(3,size(image,1), size(image,2));
 

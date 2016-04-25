@@ -1,2 +1,13 @@
-\contentsline {section}{\numberline {1}}{1}{section.1}
-\contentsline {section}{\numberline {2}توضیحات}{1}{section.2}
+\contentsline {section}{\numberline {1}تقطیع با دسته‌بندی‌کننده بیز ساده}{1}{section.1}
+\contentsline {subsection}{\numberline {1‏.‏1}دسته‌بندی‌کننده بیز ساده به عنوان عملگر تقطیع}{1}{subsection.1.1}
+\contentsline {subsection}{\numberline {1‏.‏2}تاثیر نویزهای مختلف بر عملکرد دسته‌بندی‌کننده بیز ساده}{1}{subsection.1.2}
+\contentsline {section}{\numberline {2}تقطیع با استفاده از مدل میدان تصادفی مارکف }{2}{section.2}
+\contentsline {subsection}{\numberline {2‏.‏1}بررسی مدل}{2}{subsection.2.1}
+\contentsline {subsection}{\numberline {2‏.‏2}تاثیر اهمیت یکپارچگی برچسب‌ها نسبت به سطح خاکستری}{3}{subsection.2.2}
+\contentsline {subsection}{\numberline {2‏.‏3}نحوه تغییر دما}{3}{subsection.2.3}
+\contentsline {subsection}{\numberline {2‏.‏4}مقداردهی اولیه برخی پیکسل‌ها}{4}{subsection.2.4}
+\contentsline {subsection}{\numberline {2‏.‏5}تاثیر نوع همسایگی}{4}{subsection.2.5}
+\contentsline {subsection}{\numberline {2‏.‏6}بررسی تاثیر نویز}{4}{subsection.2.6}
+\contentsline {subsection}{\numberline {2‏.‏7}تقطیع داده واقعی در فضاهای رنگی مختلف}{4}{subsection.2.7}
+\contentsline {subsection}{\numberline {2‏.‏8}تقطیع تصویر با بیش از یک ویژگی}{5}{subsection.2.8}
+\contentsline {section}{\numberline {3}توضیحات}{5}{section.3}
