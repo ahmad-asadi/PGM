@@ -8,7 +8,7 @@ simage = simage(:,:,1);
 orig_image = simage;
 
 noise_mean = 0 ;
-noise_variance = 0.1 ;
+noise_variance = 0.01 ;
 
 g0 = 0 ;
 g1 = 0 ;
@@ -92,9 +92,6 @@ imshow(mat2gray(res));
 
 
 
-figure;
-title('difference');
-imshow(mat2gray(double(orig_image) - res*255/3));
 
 
 
