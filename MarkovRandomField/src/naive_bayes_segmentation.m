@@ -1,15 +1,16 @@
 %Segmentation using naive bayes classifier
 
 disp('loading image');
-simage = imread('../test2.jpg');
+simage = imread('../test1.bmp');
 
-%simage = simage(:,:,1);
-simage = rgb2gray(simage);
+simage = simage(:,:,1);
+%simage = rgb2gray(simage);
 orig_image = simage;
+figure;
 imhist(simage);
 
 noise_mean = 0 ;
-noise_variance = 0.001 ;
+noise_variance = 0.1 ;
 
 g0 = 0 ;
 g1 = 0 ;
@@ -35,11 +36,11 @@ g2 = g2/sg ;
 
 
 
-%simage = imnoise(simage,'gaussian', noise_mean,noise_variance);
+simage = imnoise(simage,'gaussian', noise_mean,noise_variance);
 figure;
 title('noisy_input');
 image = double(simage);
-imshow(image);
+imshow(mat2gray(image));
 
 disp('adding gaussian noise with mean = 0 and var= 0.01 to the image');
 noisy_image = image;
@@ -52,11 +53,12 @@ mu0 = 0 ;
 mu1 = 127 ;
 mu2 = 200 ;
 
-mu0 = 20 ;
-mu1 = 80 ;
-mu2 = 160 ;
+%mu0 = 20 ;
+%mu1 = 80 ;
+%mu2 = 160 ;
 
-sigma = 15 ;
+%sigma = 15 ;
+sigma = 32;
 
 posteriors = zeros(417, 415, 3) ;
 
