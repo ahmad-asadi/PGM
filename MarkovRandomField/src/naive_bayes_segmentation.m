@@ -6,8 +6,6 @@ simage = imread('../test1.bmp');
 simage = simage(:,:,1);
 %simage = rgb2gray(simage);
 orig_image = simage;
-figure;
-imhist(simage);
 
 noise_mean = 0 ;
 noise_variance = 0.1 ;
@@ -37,6 +35,7 @@ g2 = g2/sg ;
 
 
 simage = imnoise(simage,'gaussian', noise_mean,noise_variance);
+imhist(simage);
 figure;
 title('noisy_input');
 image = double(simage);
