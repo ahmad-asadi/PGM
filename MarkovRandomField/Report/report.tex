@@ -1,0 +1,145 @@
+\listfiles
+
+\documentclass[11.5pt,a4paper]{article}
+
+\usepackage{amsthm,amssymb,amsmath}
+\usepackage{wasysym}
+\usepackage{mathtools}
+
+\newcommand\persiangloss[2]{#1\dotfill\lr{#2}\\}
+
+\newcommand{\nocontentsline}[3]{}
+\newcommand{\tocless}[2]{\bgroup\let\addcontentsline=\nocontentsline#1{#2}\egroup}
+\usepackage[bottom]{footmisc}
+\usepackage{indentfirst}
+
+\usepackage{caption}
+
+\usepackage{graphicx}
+\usepackage{subcaption}
+\usepackage{array}
+\usepackage{adjustbox}
+\usepackage{tablefootnote}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{yfonts}
+
+\usepackage[scr=euler,bb=ams]{mathalfa}
+
+\usepackage{xcolor,colortbl}
+\definecolor{Gray}{gray}{0.90}
+\definecolor{LGray}{gray}{0.95}
+
+\usepackage[pagebackref=false,colorlinks,linkcolor=blue,citecolor=magenta]{hyperref}
+
+\usepackage[a4paper]{geometry} 
+\geometry{a4paper,tmargin=3.5cm, bmargin=2.5cm, lmargin=2cm, rmargin=2.5cm, headheight=3em, headsep=1.5cm, footskip=1cm} 
+
+\usepackage{xepersian}
+\settextfont[Scale=1]{B Nazanin}
+%\setlatintextfont[Scale=1]{Times New Roman}
+
+%\settextfont[Scale=1.1]{B Zar}
+
+%\DefaultMathsDigits
+\setdigitfont{XB Zar}
+
+\defpersianfont\titr[Scale=1]{B Titr}
+%\defpersianfont\nastaliq[Scale=1.5]{IranNastaliq}
+%\defpersianfont\traffic[Scale=1]{B Traffic}
+%\defpersianfont\yekan[Scale=1]{B Yekan}
+%\defpersianfont\traffic[Scale=1]{XB Roya}
+%\defpersianfont\yekan[Scale=1]{XB Kayhan}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{zref-perpage}
+\zmakeperpage{footnote}
+
+
+
+\begin{document}
+
+\thispagestyle{empty}
+\vspace*{-28mm}
+\centerline{\includegraphics[height=5cm]{Imgs/ceit_logo.png}}
+
+\begin{center}
+%دستوری برای کم کردن فاصله بین لوگو و خط پایین آن
+\vspace{-2mm}
+{\LARGE
+{
+دانشکده مهندسی کامپیوتر و فن‌آوری اطلاعات\\	
+دانشگاه صنعتی امیرکبیر	
+}
+%دستوری برای تعیین فاصله بین دو خط
+\\[2.1cm]
+}
+
+{\large
+\textbf{گزارش تمرین دوم درس مدل‌های احتمالاتی گرافی}
+\\[2cm]
+
+استاد درس:
+\\[.5cm]
+{\Large
+دکتر نیک‌آبادی}
+\\[1.5cm]
+\large 
+نام دانشجو:
+\\[.5cm]
+{\Large
+احمد اسدی}
+\\[.5cm]
+۹۴۱۳۱۰۹۱
+\\[1.5cm]
+}
+%دستوری برای تعیین فاصله بین خطوط (نه دو خط) و تا وقتی که مقدار آن تغییر نکند، فاصله بین خطوط، همین مقدار است.
+
+{\large
+فروردین ۱۳۹۵
+}
+\end{center}
+
+\newpage
+\baselineskip=1cm
+\tocless\tableofcontents
+
+\newpage
+\baselineskip=0.75cm
+\pagenumbering{arabic}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\vfill
+\section{توضیحات}
+\begin{itemize}
+\item [*]به دلیل زمان اجرای طولانی الگوریتم و همین‌طور مشابهت حالت دوکلاسه و بیست‌کلاسه در آزمایش و به منظور صرفه‌جویی در زمان اجرای الگوریتم، در برخی موارد، به جای گزارش نتایج حالت بیست‌کلاسه به ارائه نتایج حالت دوکلاسه بسنده کرده‌ایم. بدیهی‌ است  در این موارد، نتایج حاصله و تحلیل‌های انجام شده، همگی قابل تعمیم به حالت بیست‌کلاسه هستند.
+\item [*] سورس کد مربوط به جعبه‌ابزار مورد استفاده در ضمیمه پروژه قرار داده شده است. همین‌طور می‌توانید برای دریافت اطلاعات بیشتر در مورد این جعبه‌ابزار به 
+\href{http://www.openpr.org.cn/index.php/NLP-Toolkit-for-Natural-Language-Processing/43-Naive-Bayes-Classfier/View-details.html}{این آدرس }
+مراجعه نمایید.
+
+\item [*] سورس کد مربوط به پروژه در ضمیمه این گزارش ارسال شده است. همین‌طور این کد از
+\href{https://github.com/ahmad-asadi/PGM/tree/master/BayesianNetwork}
+{این لینک}
+، قابل 
+دریافت می‌باشد.
+%\item [*] آدرس لینک برای دریافت کد:
+%\LTR{
+%\url{https://github.com/ahmad-asadi/PGM/tree/master/BayesianNetwork}
+%}
+\end{itemize}
+
+
+
+
+\end{document} 
