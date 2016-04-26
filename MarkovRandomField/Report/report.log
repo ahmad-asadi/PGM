@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.1415926-2.5-0.9999.3 (TeX Live 2013/Debian) (format=xelatex 2016.4.13)  25 APR 2016 21:02
+This is XeTeX, Version 3.1415926-2.5-0.9999.3 (TeX Live 2013/Debian) (format=xelatex 2016.4.13)  26 APR 2016 10:49
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1782,19 +1782,43 @@ Overfull \hbox (13.36261pt too wide) in paragraph at lines 543--544
 [][][][][] []
  []
 
-File: Imgs/MRF_S01_Res.png Graphic file (type QTm)
-<use  "Imgs/MRF_S01_Res.png" >
-File: Imgs/MRF_S1_BetaV_Res.png Graphic file (type QTm)
- <use  "Imgs/MRF_S1_BetaV_Res.png" >
-File: Imgs/MRF_S01_Res.png Graphic file (type QTm)
+File: Imgs/MRF_H_Iter9.png Graphic file (type QTm)
+<use  "Imgs/MRF_H_Iter9.png" >
+Overfull \hbox (12.96112pt too wide) in paragraph at lines 547--548
+[][][][][] []
+ []
 
-<use  "Imgs/MRF_S01_Res.png" > [4]
+File: Imgs/MRF_H.png Graphic file (type QTm)
+<use  "Imgs/MRF_H.png" >
+Overfull \hbox (15.57083pt too wide) in paragraph at lines 551--552
+[][][][][] []
+ []
+
+File: Imgs/MRF_S.png Graphic file (type QTm)
+<use  "Imgs/MRF_S.png" >
+Overfull \hbox (14.5671pt too wide) in paragraph at lines 555--556
+[][][][][] []
+ []
+
+File: Imgs/MRF_V.png Graphic file (type QTm)
+<use  "Imgs/MRF_V.png" >
+Overfull \hbox (15.97232pt too wide) in paragraph at lines 559--560
+[][][][][] []
+ []
+
+File: Imgs/MRF_H_In.png Graphic file (type QTm)
+<use  "Imgs/MRF_H_In.png" >
+Overfull \hbox (10.95366pt too wide) in paragraph at lines 563--564
+[][][][][] []
+ []
+
+[4]
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 File: Imgs/iter9_Gray_Classification.png Graphic file (type QTm)
 <use  "Imgs/iter9_Gray_Classification.png" >
-Overfull \hbox (13.36261pt too wide) in paragraph at lines 576--577
+Overfull \hbox (13.36261pt too wide) in paragraph at lines 584--585
 [][][][][] []
  []
 
@@ -1803,11 +1827,11 @@ File: Imgs/MRF_Iter4_TExp.png Graphic file (type QTm)
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 607.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 615.
 [5] [6] [7] [8] [9] [10]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 607.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 615.
  (./report.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 607.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 615.
 
 
  *File List*
@@ -2052,20 +2076,25 @@ Imgs/MRF_S1_BetaV_Res.png
 Imgs/MRF_S01_Res.png
 Imgs/MRF_Iter4_TLin.png
 Imgs/iter9_Gray_Classification.png
-Imgs/MRF_S01_Res.png
-Imgs/MRF_S1_BetaV_Res.png
-Imgs/MRF_S01_Res.png
+Imgs/MRF_H_Iter9.png
+Imgs/MRF_H.png
+Imgs/MRF_S.png
+Imgs/MRF_V.png
+Imgs/MRF_H_In.png
 Imgs/iter9_Gray_Classification.png
 Imgs/MRF_Iter4_TExp.png
  ***********
 
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 607.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 615.
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
  ) 
 Here is how much of TeX's memory you used:
- 27868 strings out of 493918
- 501075 string characters out of 6150563
- 625523 words of memory out of 5000000
- 30607 multiletter control sequences out of 15000+600000
+ 27883 strings out of 493918
+ 501282 string characters out of 6150563
+ 626523 words of memory out of 5000000
+ 30617 multiletter control sequences out of 15000+600000
  17502 words of font info for 142 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
  45i,19n,75p,10452b,635s stack positions out of 5000i,500n,10000p,200000b,80000s
