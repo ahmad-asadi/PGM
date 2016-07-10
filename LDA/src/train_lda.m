@@ -27,10 +27,16 @@ alpha = rand(1);
 phi = zeros(k , l);
 theta = zeros(n,k);
 
-
 % Gibbs sampling algorithm
-
 z = ceil(rand(n , l)*10) ;
+
+for j = 1 : k
+    fprintf('\t*') ;
+    tmp = ones(n,l) * j ;
+    tmp(:,i) = 0 ;
+    tmp = (z - tmp) & 1 ;
+    w_ijdot(j) = sum(sum((1-tmp))) ;
+end
 
 for iter = 1 : epochCount
     for d_idx = 1 : n
@@ -41,28 +47,29 @@ for iter = 1 : epochCount
             end
             counter = counter + 1 ;
             fprintf('%d:%d/%d,%d/%d', iter, d_idx, n, counter , sum(dataset(d_idx, :) & 1));
-            pz_conditional = zeros(k,1);
-            for j = 1 : k
-                fprintf('*%d') ;
-                w_ij = sum(1-((z(d_idx, :) - (ones(1,l) * j))&1));
-                tmp = ones(n,l) * j ;
-                tmp(:,i) = 0 ;
-                tmp = (z - tmp) & 1 ;
-                w_ijdot = sum(sum((1-tmp))) ;
-                if(z(d_idx , i) == j)
-                    tmp = 1 ;
-                    w_ij = w_ij -1 ;
-                else
-                    tmp = 0 ;
-                end                
-                pz_conditional(j) = (w_ij + beta) / ( w_ijdot + l * beta);
-                pz_conditional(j) = pz_conditional(j) * ((sum(dataset(d_idx,:)) - (tmp * 1) + alpha)/(sum(dataset(d_idx,:)&1) - 1 + k * alpha));
-            end
+            pz_conditional = zeros(k,l);
+            w_ij = sum((1-(( repmat(z(d_idx, :),k,1) - (ones(k,l) .* repmat((1:k).',1,l)) )&1)).');
+            w_ij = w_ij(1,z(d_idx,:));
+        
+            
+            w = repmat(dataset(d_idx , :),k,1) ;
+            tmp = ones(k,l) .* repmat((1:k).',1,l) ;
+            tmp = 1 - ((w - tmp) & 1) ;
+            n_ij = repmat(sum(tmp.').',1,l);
+            
+            n_ijdot = repmat(sum(n_ij) - 1,k,l);
+
+            
+            pz_conditional = (w_ij + beta) / ( w_ijdot.' + l * beta);
+            pz_conditional = pz_conditional .* ((n_ij(z(d_idx,i)) + alpha)/(n_ijdot + k * alpha));
+            
+            
             fprintf('\n') ;
+            w_ijdot(z(d_idx,i)) = w_ijdot(z(d_idx,i)) - 1;
             [~,z(d_idx , i)] = max(pz_conditional) ;
+            w_ijdot(z(d_idx,i)) = w_ijdot(z(d_idx,i)) + 1;
         end
     end
-
 end    
     
 
