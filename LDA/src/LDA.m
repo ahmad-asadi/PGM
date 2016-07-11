@@ -1,3 +1,5 @@
 load_dataset();
 
-train_lda();
+[z , phi , theta] = train_lda();
+
+inference() ;

@@ -1,4 +1,4 @@
-function train_lda()
+function [z , phi , theta] = train_lda(data, giben_phi , given_theta)
 
 %initializations
 global dataset ;
@@ -33,43 +33,54 @@ z = ceil(rand(n , l)*10) ;
 for j = 1 : k
     fprintf('\t*') ;
     tmp = ones(n,l) * j ;
-    tmp(:,i) = 0 ;
     tmp = (z - tmp) & 1 ;
-    w_ijdot(j) = sum(sum((1-tmp))) ;
+    topic_counts(j) = sum(sum((1-tmp))) ;
 end
-
+topic_counts = repmat(topic_counts.' , 1 , l);
+fprintf('\n');
 for iter = 1 : epochCount
+    fprintf('iteration: %d\n', iter) ;
+    tic
     for d_idx = 1 : n
-        counter = 0 ;
-        for i = 1 : l
-            if(dataset(d_idx, i) ==0)
-                continue;
-            end
-            counter = counter + 1 ;
-            fprintf('%d:%d/%d,%d/%d', iter, d_idx, n, counter , sum(dataset(d_idx, :) & 1));
-            pz_conditional = zeros(k,l);
-            w_ij = sum((1-(( repmat(z(d_idx, :),k,1) - (ones(k,l) .* repmat((1:k).',1,l)) )&1)).');
-            w_ij = w_ij(1,z(d_idx,:));
-        
-            
-            w = repmat(dataset(d_idx , :),k,1) ;
-            tmp = ones(k,l) .* repmat((1:k).',1,l) ;
-            tmp = 1 - ((w - tmp) & 1) ;
-            n_ij = repmat(sum(tmp.').',1,l);
-            
-            n_ijdot = repmat(sum(n_ij) - 1,k,l);
 
+        z(d_idx, :) = (dataset(d_idx,:) & z(d_idx,:)) .* z(d_idx,:) ;
+        document_topic_count = sum((1-(( repmat(z(d_idx, :),k,1) - (ones(k,l) .* repmat((1:k).',1,l)) )&1)).');
+        document_topic_count = repmat(document_topic_count.',1,l);
+        topic_per_document_count = sum((1-((repmat(z(d_idx,:),k,1) - repmat(ones(1,k).'.*(1:k).',1,l))&1)).');
+        document_word_count = repmat(sum(dataset(d_idx, :)),1,k);
+        document_word_count = repmat(document_word_count.' , 1 , l);
+        topic_per_document_count = repmat(topic_per_document_count.', 1 , l);
+        
+
+       word_indices = (dataset(d_idx,:) & 1 ) .* (1:l) ;
+       word_indices = word_indices(word_indices ~= 0) ;
+       topic_indices = z(d_idx,word_indices) ; 
+       for i =1 : size(word_indices)
+        topic_per_document_count(topic_indices(i),word_indices(i)) = topic_per_document_count(topic_indices(i),word_indices(i))  - 1;
+        document_topic_count(topic_indices(i),word_indices(i)) = document_topic_count(topic_indices(i),word_indices(i))  - 1;
+            %document_topic_count(z(d_idx,i)) = document_topic_count(z(d_idx,i)) - 1;
+        topic_counts(topic_indices(i),word_indices(i)) = topic_counts(topic_indices(i),word_indices(i))  - 1;
+            %topic_counts(z(d_idx,i)) = topic_counts(z(d_idx,i)) - 1;
+
+            pz_conditional = (document_topic_count + beta) ./ ( topic_counts + l * beta);
+            pz_conditional = pz_conditional .* ((topic_per_document_count + alpha)./(document_word_count-1 + k * alpha));
             
-            pz_conditional = (w_ij + beta) / ( w_ijdot.' + l * beta);
-            pz_conditional = pz_conditional .* ((n_ij(z(d_idx,i)) + alpha)/(n_ijdot + k * alpha));
-            
-            
-            fprintf('\n') ;
-            w_ijdot(z(d_idx,i)) = w_ijdot(z(d_idx,i)) - 1;
-            [~,z(d_idx , i)] = max(pz_conditional) ;
-            w_ijdot(z(d_idx,i)) = w_ijdot(z(d_idx,i)) + 1;
-        end
+        topic_per_document_count(topic_indices(i),word_indices(i)) = topic_per_document_count(topic_indices(i),word_indices(i))  + 1;
+        document_topic_count(topic_indices(i),word_indices(i)) = document_topic_count(topic_indices(i),word_indices(i))  + 1;
+            %document_topic_count(z(d_idx,i)) = document_topic_count(z(d_idx,i)) + 1;
+        topic_counts(topic_indices(i),word_indices(i)) = topic_counts(topic_indices(i),word_indices(i))  + 1;
+            %topic_counts(z(d_idx,i)) = topic_counts(z(d_idx,i)) + 1;
+            topic_counts(topic_indices(i),word_indices(i)) = topic_counts(topic_indices(i),word_indices(i)) - 1;
+            [~,new_topics] = max(pz_conditional) ;
+            z(d_idx,:) = new_topics;
+            topic_indices = z(d_idx,word_indices) ; 
+            topic_counts(topic_indices(i),word_indices(i)) = topic_counts(topic_indices(i),word_indices(i)) + 1;
+       end
+%             topic_counts(topic_,z(d_idx,:)) = topic_counts(:,z(d_idx,:)) - 1;
+%             [~,z(d_idx , :)] = max(pz_conditional) ;
+%             topic_counts(:,z(d_idx,:)) = topic_counts(:,z(d_idx,:)) + 1;
     end
+    toc
 end    
     
 
