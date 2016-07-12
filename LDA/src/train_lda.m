@@ -1,4 +1,5 @@
-function [z , phi , theta] = train_lda(data, giben_phi , given_theta)
+function [z , phi , theta] = train_lda(data, given_z , given_phi , given_theta)
+
 
 %initializations
 global dataset ;
@@ -21,7 +22,7 @@ fprintf('number of iterations      =  %d\n', epochCount);
 fprintf('initialization of parameters\n');
 
 
-beta = rand(1);
+beta = rand(1); 
 alpha = rand(1);
 
 phi = zeros(k , l);
@@ -29,6 +30,14 @@ theta = zeros(n,k);
 
 % Gibbs sampling algorithm
 z = ceil(rand(n , l)*10) ;
+
+if nargin > 0
+    pdataset = dataset;
+    dataset = data ;
+    phi = given_phi ;
+    theta = given_theta ;
+    z = given_z ;
+end
 
 for j = 1 : k
     fprintf('\t*') ;
@@ -109,3 +118,6 @@ end
         end
     end
     
+if nargin > 0
+    dataset = pdataset;
+end

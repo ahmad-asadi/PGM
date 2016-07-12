@@ -1,4 +1,5 @@
-function train_lda()
+function [z , phi , theta] = train_lda(data, given_z , given_phi , given_theta)
+
 
 %initializations
 global dataset ;
@@ -21,7 +22,7 @@ fprintf('number of iterations      =  %d\n', epochCount);
 fprintf('initialization of parameters\n');
 
 
-beta = rand(1);
+beta = rand(1); 
 alpha = rand(1);
 
 phi = zeros(k , l);
@@ -29,6 +30,12 @@ theta = zeros(n,k);
 
 % Gibbs sampling algorithm
 z = ceil(rand(n , l)*10) ;
+
+if nargin > 0
+    dataset = data ;
+    phi = given_phi ;
+    g
+end
 
 for j = 1 : k
     fprintf('\t*') ;
@@ -46,23 +53,26 @@ for iter = 1 : epochCount
         z(d_idx, :) = (dataset(d_idx,:) & z(d_idx,:)) .* z(d_idx,:) ;
         document_topic_count = sum((1-(( repmat(z(d_idx, :),k,1) - (ones(k,l) .* repmat((1:k).',1,l)) )&1)).');
         document_topic_count = repmat(document_topic_count.',1,l);
-        topic_per_document_count = sum(((repmat(z(d_idx,:),k,1) - repmat(ones(1,k).'.*(1:k).',1,l))&1).');
+        topic_per_document_count = sum((1-((repmat(z(d_idx,:),k,1) - repmat(ones(1,k).'.*(1:k).',1,l))&1)).');
         document_word_count = repmat(sum(dataset(d_idx, :)),1,k);
         document_word_count = repmat(document_word_count.' , 1 , l);
+        topic_per_document_count = repmat(topic_per_document_count.', 1 , l);
         
 
        word_indices = (dataset(d_idx,:) & 1 ) .* (1:l) ;
        word_indices = word_indices(word_indices ~= 0) ;
        topic_indices = z(d_idx,word_indices) ; 
        for i =1 : size(word_indices)
+        topic_per_document_count(topic_indices(i),word_indices(i)) = topic_per_document_count(topic_indices(i),word_indices(i))  - 1;
         document_topic_count(topic_indices(i),word_indices(i)) = document_topic_count(topic_indices(i),word_indices(i))  - 1;
             %document_topic_count(z(d_idx,i)) = document_topic_count(z(d_idx,i)) - 1;
         topic_counts(topic_indices(i),word_indices(i)) = topic_counts(topic_indices(i),word_indices(i))  - 1;
             %topic_counts(z(d_idx,i)) = topic_counts(z(d_idx,i)) - 1;
 
             pz_conditional = (document_topic_count + beta) ./ ( topic_counts + l * beta);
-            pz_conditional = pz_conditional .* ((topic_per_document_count + alpha)./(document_word_count + k * alpha));
+            pz_conditional = pz_conditional .* ((topic_per_document_count + alpha)./(document_word_count-1 + k * alpha));
             
+        topic_per_document_count(topic_indices(i),word_indices(i)) = topic_per_document_count(topic_indices(i),word_indices(i))  + 1;
         document_topic_count(topic_indices(i),word_indices(i)) = document_topic_count(topic_indices(i),word_indices(i))  + 1;
             %document_topic_count(z(d_idx,i)) = document_topic_count(z(d_idx,i)) + 1;
         topic_counts(topic_indices(i),word_indices(i)) = topic_counts(topic_indices(i),word_indices(i))  + 1;
