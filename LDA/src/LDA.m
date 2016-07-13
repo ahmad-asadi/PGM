@@ -16,4 +16,11 @@ dataset = dataset();
 
 [z , phi , theta] = train_lda(dataset , z , phi , theta) ;
 
-save('../dataset/output.dat' , 'z');
+dlmwrite('../dataset/theta_output.dat' , theta.');
+dlmwrite('../dataset/phi_output.dat' , phi.');
+
+findcluster('../dataset/theta_output.dat');
+
+perplexity = calculate_perplexity(phi, theta,dataset);
+
+fprintf('perplexity %d', perplexity);
