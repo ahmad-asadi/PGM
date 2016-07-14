@@ -9,9 +9,9 @@ global k ;
 dataset = load('../dataset/ap/feature_vectors.mat' , 'dataset');
 dataset = dataset.dataset;
 
-epochCount = 200 ;
+epochCount = 60 ;
 l = size(dataset, 2) - 1;
-k = 10;%   topic count
+k = 5;%   topic count
 pz_conditional = zeros(k,1) ;
 
 dataset = dataset(:,1:l);
@@ -106,8 +106,8 @@ for iter = 1 : epochCount
                     snwji = snwji - 1 ;
                     ndji = ndji - 1 ;
                 end
-                pz_conditional(j) = (nwji * beta) / (snwji + (l * beta)) ;
-                pz_conditional(j) = pz_conditional(j) * (ndji + alpha)/(sndji + (l * alpha)) ;
+                pz_conditional(j) = (nwji + beta) / (snwji + (l * beta)) ;
+                pz_conditional(j) = pz_conditional(j) * (ndji + alpha)/(sndji + (k * alpha)) ;
             end
             
             old_topic = z(d_idx,i) ;
@@ -138,7 +138,7 @@ for iter = 1 : epochCount
         end
         
         for d = 1 : n
-            theta(j,d) = (n_d(j,d) + alpha) / (sum(n_d(:,d)) + n * alpha) ;
+            theta(j,d) = (n_d(j,d) + alpha) / (sum(n_d(:,d)) + k * alpha) ;
         end
     end
     
@@ -165,9 +165,10 @@ end
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%testing new documents
 
 pz_conditional = zeros(k,1) ;
-
+epochCount = 15;
 dataset = test_set;
 n = size(dataset, 1);
+figure;
 
 fprintf('number of test documents       =  %d\n', n);
 fprintf('number of test words           =  %d\n', l);
@@ -178,6 +179,28 @@ fprintf('initialization of parameters\n');
 % Gibbs sampling algorithm
 z = ceil(rand(n , l)*k) ;
 z = (dataset & z) .* z ;
+
+   
+disp('calculating test n_w matrix') ;
+tic
+for i = 1 : l
+    freq = dataset(:,i) ;
+    temp = z(:,i) ;
+    temp = (1-((repmat(temp.',k,1) - repmat((ones(1,k) .* (1:k)).',1,n)) & 1)) .* repmat(freq.',k,1) ;
+    n_w(: , i) = n_w(: , i) + sum(temp.').';
+end
+toc
+ 
+disp('calculating n_d matrix') ;
+tic
+for i = 1 : n
+    temp = z(i,:) ;
+    temp = 1-((repmat(temp,k,1) - repmat((ones(1,k) .* (1:k)).',1,l)) & 1 ) ;
+    n_d(: , i) = n_d(:, i) + sum(temp.').';
+end
+toc
+
+
 
 fprintf('\n');
 perplexity = zeros(epochCount,1);
@@ -204,8 +227,8 @@ for iter = 1 : epochCount
                     snwji = snwji - 1 ;
                     ndji = ndji - 1 ;
                 end
-                pz_conditional(j) = (nwji * beta) / (snwji + (l * beta)) ;
-                pz_conditional(j) = pz_conditional(j) * (ndji + alpha)/(sndji + (l * alpha)) ;
+                pz_conditional(j) = (nwji + beta) / (snwji + (l * beta)) ;
+                pz_conditional(j) = pz_conditional(j) * (ndji + alpha)/(sndji + (k * alpha)) ;
             end
             
             old_topic = z(d_idx,i) ;
@@ -226,7 +249,7 @@ for iter = 1 : epochCount
         end
         
         for d = 1 : n
-            theta(j,d) = (n_d(j,d) + alpha) / (sum(n_d(:,d)) + n * alpha) ;
+            theta(j,d) = (n_d(j,d) + alpha) / (sum(n_d(:,d)) + k * alpha) ;
         end
     end
     
@@ -245,3 +268,5 @@ for iter = 1 : epochCount
 
  
 end
+
+disp('finished')

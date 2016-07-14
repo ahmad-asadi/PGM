@@ -18,9 +18,6 @@ function z = generate_samples_from_conditional_distribution(pmf)
             z = temp - 1 ;
             break;
         else
-            if(temp == 11)
-                disp('here');
-            end
             stemp = stemp + pmf(temp) ;
         end
     end
